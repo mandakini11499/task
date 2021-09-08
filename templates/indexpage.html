@@ -1,0 +1,5 @@
+<h2><a href="{% url 'signup' %}" >Registration</a></h2>
+<h2><a href="{% url 'login' %}">LoginPage</a></h2>
+{% if msg %}
+    <h3 style="color: green">{{ msg }}</h3>
+{% endif %}

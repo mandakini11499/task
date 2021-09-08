@@ -1,0 +1,12 @@
+
+<form action="{% url 'sign' %}" method="post">
+    {% csrf_token %}
+<table align="center" border="2">
+    <tr><th><input type="email" name="email" placeholder="Email"required></th></tr>
+    <tr><th><input type="password" name="password" placeholder="Password"required></th></tr>
+    <tr><th><button type="submit">LoginHere</button></th></tr>
+</table>
+</form>
+{% if msg %}
+<h3 style="color:red">{{ msg }}</h3>
+{% endif %}
